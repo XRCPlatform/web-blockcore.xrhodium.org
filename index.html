@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Blockcore xRhodium (XRC) - Full Node, Light Wallet</title>
+  <meta content="" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="assets/all.css" rel="stylesheet">
+  <link href="assets/css2.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png?v2">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png?v2">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png?v2">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png?v2">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png?v2">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png?v2">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png?v2">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png?v2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png?v2">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png?v2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v2">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png?v2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v2">
+    <link rel="manifest" href="/manifest.json?v2">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png?v2">
+    <meta name="theme-color" content="#ffffff">
+	
+  <meta property="og:title" content="Blockcore xRhodium (XRC) - Full node, Light wallet">
+  <meta property="og:description" content="Blockcore xRhodium (XRC) is a full node software with wallet support.">
+  <meta property="og:image" content="https://blockcore.xrhodium.org/assets/thumbnail.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!--<meta property="og:url" content="">-->
+  <meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="assets/styles.css"></head>
+  
+
+<body>
+   <app-nav-menu>
+      <header>
+         <nav class="navbar">
+            <a class="navbar-brand" href="https://www.blockcore.net/"><img src="assets/blockcore-small.png" class="navbar-logo"></a>
+            <ul class="navbar-nav">
+               <li class="nav-item"><a class="nav-link" href="https://blockcore.xrhodium.org/">Blockcore XRC</a>. </li>
+               <li class="nav-item"><a class="nav-link" href="https://www.blockcore.net/">Official Blockcore</a>. </li>
+            </ul>
+         </nav>
+      </header>
+   </app-nav-menu>
+   <div class="content">
+      <router-outlet></router-outlet>
+      <app-platform-component>
+         <h1>Blockcore xRhodium (XRC)</h1>
+         <h2>Full node, Light wallet</h2>
+		 <div style="float: right">
+		 <p><a href="assets/blockcore-node.png" target="_blank"><img src="assets/blockcore-node.png" class="thumbnail-large"></a></p>
+		 <p><a href="assets/blockcore-node2.png" target="_blank"><img src="assets/blockcore-node2.png" class="thumbnail-large"></a></p>
+		 	<p>	 <a href="assets/blockcore-node3.png" target="_blank"><img src="assets/blockcore-node3.png" class="thumbnail-large"></a></p>
+		 </div>
+         <p>
+		 The
+            node software is a full node software that runs the <a href="https://www.xrhodium.org" target="_blank">xRhodium (XRC) blockchain network</a>.
+         </p>
+		 <p>
+		 Features:
+		 </p>
+		 <ul><li>Full xRhodium XRC blockchain</li><li>RPC server</li><li>Desktop/server wallet</li><li>Decentralized</li><li>Windows, Linux, MacOS support</li><li>Open source</li>
+		 </ul>
+		 <p>Full node is able to use with:</p>
+		 <ul>
+		 <li>Blockcore Explorer</li>
+		 <li>Blockcore Indexer</li>
+		 <li>Blockcore TipBot</li>
+		 <li>Blockcore Wallet</li>
+		 <li>Blockcore PaperWallet</li>
+		 </ul>
+         <p>Source: <a href="https://github.com/xrhodium/blockcore" target="_blank">https://github.com/xrhodium/blockcore</a></p>
+         <h3>How to run it?</h3>
+		 <h4>For Windows x64 you can download this precompiled package:</h4>
+		 <p>1) Get .NET 6.0 SDK <a href="https://dotnet.microsoft.com/download" target="_blank">https://dotnet.microsoft.com/download</a></p>
+		 <p>2) Get ZIP with executable: <a href="downloads/Blockcore.Node.XRC_1.1.31b.zip" target="_blank">Blockcore.Node.XRC_1.1.31b.zip</a><br/>
+		 You can check ZIP file with <a href="downloads/Blockcore.Node.XRC_1.1.31b.zip.sig" target="_blank">PGP Signature checksum</a>.</p>
+		 <p>3) Run <strong>RUN_XRC.bat</strong> with this configuration:</p>
+		 <code>
+		 Blockcore.Node.exe --chain=XRC -server -iprangefiltering=0 -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata
+		 </code>
+		 		  <p>Your local server will start IBD. After synchronization your can access RPC on port 19660 and light wallet on <a href="http://127.0.0.1:37221" target="_blank">http://127.0.0.1:37221</a>.</p>
+		 <h4>In other case:</h4>
+		 <p>1) Get Git from <a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></p>
+		 <p>2) Get .NET 6.0 SDK <a href="https://dotnet.microsoft.com/download" target="_blank">https://dotnet.microsoft.com/download</a></p>
+		 
+		  <p>Clone git &amp; build with:</p>
+		  <code>git clone https://github.com/xrhodium/blockcore<br/>
+		  cd blockcore/src/Node/Blockcore.Node/<br/>
+			dotnet restore<br/>
+			dotnet build</code>
+		  <p>Run xRhodium Main network with:</p>
+		  <code>dotnet run --chain=XRC -server -iprangefiltering=0 -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata</code>
+		  <p>Your local server will start IBD. After synchronization your can access RPC on port 19660 and light wallet on <a href="http://127.0.0.1:37221" target="_blank">http://127.0.0.1:37221</a>.</p>
+		  
+		  <h3>In case of RockDb Native issue</h3>
+		  
+		  <p>1) try remove data folder without your wallet data</p>
+		  <p>2) add RockDb libs to your system.
+		  <code>
+		  sudo apt update
+sudo apt install -y libc-dev librocksdb-dev
+
+in \src\Node\Blockcore.Node\
+dotnet add package RocksDbSharp
+dotnet add package RocksDbNative
+		  </code>
+		  
+		  <h3>Whitelist seed issue</h3>
+		  <p>If there is some issue connected with whitelisting of some peer then add to your command -addnode=**some ip**. Where IP is some IP from peers in your log file or console log.
+		  		  <code>dotnet run --chain=XRC -server -iprangefiltering=0 -rpcallowip=127.0.0.1 -rpcbind=127.0.0.1 -rpcpassword=rpcpassword -rpcuser=rpcuser -datadir=nodedata -addnode=127.0.0.1</code>
+		  
+		 <h3>Firewall rules</h3>
+		 <p>Node is using ports:</p>
+		 <ul>
+			<li>37270 - Main xRhodium XRC network port</li>
+			<li>19660 - Your node RPC port</li>
+			<li>37221 - Your node API port</li>
+		 </ul>
+      </app-platform-component>
+      <!---->
+   </div>
+   <app-nav-footer>
+      <div class="footer footer-background">
+         <div class="grid-container-footer">
+            <div class="footer-left">
+               <p style="padding: 1em;">
+                  Blockcore is an open source project started by a group of blockchain 
+                  developers and engineers to realize a fully integrated platform for 
+                  building custom blockchains on .NET developer platform. - <a style="color: var(--accent);" href="/legal.html" target="_blank">Legal Disclaimer</a>  <br />FMone.org, Keizersgracht 241, 1016EA Amsterdam, Netherlands
+               </p>
+            </div>
+         </div>
+      </div>
+   </app-nav-footer>
+   
+	<div id="cookie-notice" role="banner" class="cookie-notice-visible" aria-label="Cookie Notice"><div class="cookie-notice-container"><span id="cn-notice-text" class="cn-text-container">We use Google Analytics cookies only to improve user experience and analyze website traffic. By clicking “Accept“, you agree to our website's cookie use as described in our <a href="/privacy.php" target="_blank">Privacy Policy</a> and <a href="/privacycookies.php" target="_blank">Cookies Policy</a>. You can “Decline” it to remove all these cookies.</span><br /><span id="cn-notice-buttons" class="cn-buttons-container"><a id="cn-decline-cookie" href="#" class="cn-set-cookie cn-button bootstrap button">Decline</a> <a id="cn-accept-cookie" href="#" class="cn-set-cookie cn-button bootstrap button">Accept</a></span></div></div>
+	
+        <script src="assets/jquery.js"></script>
+		<script>
+		jQuery(document).ready(function(){
+
+			$('#cn-accept-cookie').click(function() {
+				setCookie('accept-cookie', 'true');
+				$('#cookie-notice').removeClass('cookie-notice-visible').addClass('cookie-notice-hidden');
+			});
+	
+			var acceptcookie = getCookie('accept-cookie');
+			if (acceptcookie == 'true') {
+				$('#cookie-notice').removeClass('cookie-notice-visible').addClass('cookie-notice-hidden');
+			}
+			
+			$('#cn-decline-cookie').click(function() {
+				window['ga-disable-G-2WSQXN4Z6P'] = true;
+				if (window.ga) window.ga('remove');
+				if (document.cookie) {
+					var cookies = document.cookie.split(";");
+
+					for (var i = 0; i < cookies.length; i++) {
+						var cookie = cookies[i];
+						var eqPos = cookie.indexOf("=");
+						var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+						var domain = document.domain;
+						document.cookie = name + "=;path=/;domain=" + domain + ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
+						document.cookie = name + "=;path=/;domain=" + domain.replace('blockcore.', '') + ";expires=Thu, 01 Jan 1970 00:00:00 GMT";
+					}
+				}
+				alert("Cookies have been removed.");
+			});
+		});
+		
+		function setCookie(key, value) {
+			var expires = new Date();
+			expires.setTime(expires.getTime() + 31536000000); //1 year  
+			document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+		}
+
+		function getCookie(key) {
+			var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+			return keyValue ? keyValue[2] : null;
+		}  
+		</script>
+		
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WSQXN4Z6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2WSQXN4Z6P', {
+	            'linker': {
+                'domains': ['xrhodium.org', 'explorer.xrhodium.org', 'poolcore.xrhodium.org', 'network.xrhodium.org', 'electrumxrc.org', 'fmone.org', 'blockcore.xrhodium.org']
+            }
+        });
+</script>
+</body>
+</html>
